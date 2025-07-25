@@ -25,7 +25,20 @@ struct ContentView: View {
                 VStack(alignment: .center, spacing: 20) {
                     Text("New Birthday")
                         .font(.headline)
-                }
+                    DatePicker(selection: $newBirthday, in: Date.distantPast...Date.now, displayedComponents: .date) {
+                        TextField("Name", text: $newName)
+                            .textFieldStyle(.roundedBorder)
+                    } //closes DatePicker
+                    Button("Save") {
+                        let newFriend = Friend(name: newName, birthday: newBirthday)
+                        friends.append(newFriend)
+                        newName = ""
+                        newBirthday = .now
+                    }
+                    .bold()
+                } //closes VStack
+                .padding()
+                .background(.bar)
             } //closes safeAreaInset
         } //closes NavigationStack
     } //closes body
