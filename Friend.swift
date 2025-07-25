@@ -5,8 +5,12 @@
 //  Created by Scholar on 7/25/25.
 //
 
-import Foundation
+//TO BE COMPLETED: Step 8: Add Functionality to Update a Friend
 
+import Foundation
+import SwiftData
+
+@Model
 class Friend {
     var name : String
     //to assign the variable to something (e.g. "" or "cat"), use =
