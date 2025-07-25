@@ -5,7 +5,7 @@
 //  Created by Scholar on 7/25/25.
 //
 
-//TO BE COMPLETED: Step 8: Add Functionality to Update a Friend
+//TO BE COMPLETED: Step 8: Add Functionality to Update a Friend (steps 1-3)
 
 import Foundation
 import SwiftData
